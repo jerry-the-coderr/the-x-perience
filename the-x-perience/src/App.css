@@ -1,0 +1,189 @@
+.debug {
+  border: 2px solid aqua;
+}
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  overflow-x: hidden;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  flex: auto;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  font-size: 6rem;
+  margin: 0px;
+}
+label {
+  display: inline-block;
+  margin: 1.6rem;
+  background-color: white;
+  border-radius: 20px;
+  color: #1e1e1e;
+  padding: 5px 15px;
+  font-size: 5.8rem;
+}
+.mention {
+  color: skyblue;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  display: inline-block;
+  text-decoration: underline 5px tomato;
+}
+
+.emphasis {
+  font-weight: 500;
+  color: #1e1e1e;
+  background-color: skyblue;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 15px;
+  display: inline-block;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 80vw;
+  height: 80vh;
+  padding: 30px 20px;
+  border: 2px solid white;
+  border-radius: 200px;
+  margin: 20px;
+}
+.intro-heading {
+  font-size: 6rem;
+  font-family: monospace;
+  text-align: center;
+  margin: 0px;
+  margin-top: 40px;
+  /* width: 50%; */
+}
+
+.intro-text {
+  padding: 10px 35px;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+em {
+  color: tomato;
+  font-weight: bold;
+  text-decoration: underline 2px aqua;
+  opacity: 0.6;
+}
+
+.separator {
+  content: " ";
+  display: block;
+  margin: 0.55rem;
+  border-bottom: 2px solid tomato;
+}
+
+.my-machine {
+  display: grid;
+  width: 90vw;
+  height: 90vh;
+
+  padding: 20px;
+  margin: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  /* temporary */
+}
+
+.my-machine-heading {
+  font-size: 6rem;
+  margin: 0px;
+}
+.archlogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(assets/image.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.my-machine-card1 {
+  text-align: center;
+  grid-area: 1 / 1 / 2 / 6;
+}
+.my-machine-card2 .emphasis {
+  display: inline-block;
+  height: 30%;
+  width: 90%;
+}
+.my-machine-card2 .emphasis:nth-child(1){
+  background-color: greenyellow;
+}
+
+.my-machine-card2 .emphasis:nth-child(3){
+  background-color: tomato;
+}
+
+
+.my-machine-card2 .emphasis:nth-child(4){
+  background-color: rgb(131, 133, 244);
+}
+
+.my-machine-card2 .emphasis:nth-child(5){
+  background-color: orange;
+}
+
+.my-machine-card2 .emphasis:nth-child(6){
+  background-color :rgb(247, 72, 107);
+}
+.my-machine-card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+
+  gap: 2px;
+  text-align: center;
+  font-size: 2rem;
+  grid-area: 2 / 1 / 6 / 3;
+}
+.my-machine-card3 {
+  text-align: center;
+  font-size: 2rem;
+  grid-area: 2 / 4 / 4 / 6;
+}
+.my-machine-card4 {
+  text-align: center;
+  font-size: 2rem;
+  grid-area: 4 / 4 / 6 / 6;
+}
+.my-machine-card5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  grid-area: 2 / 3 / 6 / 4;
+}
