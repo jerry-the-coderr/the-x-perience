@@ -1,5 +1,5 @@
 .debug {
-  border: 2px solid aqua;
+  border: 2px solid #238636;
 }
 body {
   background-color: #1e1e1e;
@@ -26,18 +26,21 @@ body {
 
   font-size: 6rem;
   margin: 0px;
+  font-family: monospace;
 }
 label {
   display: inline-block;
+  font-family: monospace;
   margin: 1.6rem;
-  background-color: white;
+  /* background-color: ; */
+  border: 5px solid #238636;
   border-radius: 20px;
-  color: #1e1e1e;
+  color: #238636;
   padding: 5px 15px;
   font-size: 5.8rem;
 }
 .mention {
-  color: skyblue;
+  color: #238636;
   font-size: 1.7rem;
   font-weight: bolder;
   display: inline-block;
@@ -47,10 +50,10 @@ label {
 .emphasis {
   font-weight: 500;
   color: #1e1e1e;
-  background-color: skyblue;
+  background-color: #238636;
   margin: 2px;
-  padding: 5px;
-  border-radius: 15px;
+  /* padding: 5px; */
+  /* border-radius: 15px; */
   display: inline-block;
 }
 .intro {
@@ -84,7 +87,7 @@ label {
 em {
   color: tomato;
   font-weight: bold;
-  text-decoration: underline 2px aqua;
+  text-decoration: underline 2px #238636;
   opacity: 0.6;
 }
 
@@ -150,7 +153,7 @@ em {
 }
 
 .my-machine-card2 .emphasis:nth-child(5){
-  background-color: orange;
+  background-color: #238636;
 }
 
 .my-machine-card2 .emphasis:nth-child(6){
@@ -186,4 +189,50 @@ em {
   text-align: center;
   font-size: 1.4rem;
   grid-area: 2 / 3 / 6 / 4;
+}
+
+
+.projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projects-heading{
+  font-size: 6rem;
+  font-family: monospace;
+  text-align: center;
+}
+.projects-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+/* FOOTER */
+
+.footer{
+  text-align: center;
+  background-color: black;
+  width: 110vw;
+  height: 20vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.footer-text{
+  font-size: 2rem;
+  font-family: monospace;
+  font-weight: bolder;
+  color: #238636;
+  border: 2px solid #238636;
+  padding: 5px 10px;
+  border-radius: 10px;
+
 }

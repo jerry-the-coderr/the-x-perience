@@ -1,0 +1,58 @@
+/* p-card | p-card-heading | p-card-description | p-card-image | p-card-link-button */
+
+.p-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid skyblue; */
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    font-family: monospace;
+
+    background-color: #252323;
+    border-radius: 20px;
+    box-shadow: 2px 4px 18px #2f2f2f inset;
+}
+
+.p-card-heading{
+    text-align: left;
+    font-size: 2.4rem;
+    align-self: baseline;
+    margin: 10px;
+}
+.p-card-image{
+    align-self: baseline;
+    height: 240px;
+    width: 427px;
+
+    border: 1px solid white;
+}
+
+.p-card-description{
+    align-self: baseline;
+    max-width: 427px;
+}
+.p-card-link-button{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    /* border: 1px solid #1e1e1e; */
+    padding: 5px 10px;
+    background-color: #238636;
+    color: #1e1e1e;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 10px;
+
+    transition: 200ms;
+    flex-basis: auto;
+    align-self: flex-end;
+}
+.p-card-link-button:hover{
+    transform: scale(1.2);
+    opacity: 0.9;
+    transition: 200ms;
+    border-radius: 10px;
+}

@@ -1,5 +1,9 @@
 import "./App.css";
 
+import ProjectCard from "./ProjectCard";
+
+import image1 from "./assets/image.png"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
@@ -37,7 +41,7 @@ function App() {
           i would like to remember or record just to keep count of it.
         </p>
       </div>
-
+{/* 
       <div className="my-machine">
         <h2 className="my-machine-card1 my-machine-heading ">
           My Machine
@@ -79,6 +83,60 @@ function App() {
 
           <div className="archlogo"></div>
         </div>
+      </div> */}
+      <div className="projects">
+        <h2 className="projects-heading">My Projects</h2>
+        
+       <div className="projects-container">
+      
+          
+        <ProjectCard title='First Project'
+        content="
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem dolore minus porro expedita. Maxime, repudiandae. Libero nisi eos tempore consequuntur quas ipsam obcaecati quae quaerat voluptatem, est, perspiciatis omnis!
+        "
+        link="https://google.com" 
+        img={image1} />
+      
+
+        <ProjectCard title='First Project'
+        content="
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem dolore minus porro expedita. Maxime, repudiandae. Libero nisi eos tempore consequuntur quas ipsam obcaecati quae quaerat voluptatem, est, perspiciatis omnis!
+        "
+        link="https://google.com" 
+        img={image1} />
+          
+          
+        <ProjectCard title='First Project'
+        content="
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem dolore minus porro expedita. Maxime, repudiandae. Libero nisi eos tempore consequuntur quas ipsam obcaecati quae quaerat voluptatem, est, perspiciatis omnis!
+        "
+        link="https://google.com" 
+        img={image1} />
+         <ProjectCard title='First Project'
+        content="
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem dolore minus porro expedita. Maxime, repudiandae. Libero nisi eos tempore consequuntur quas ipsam obcaecati quae quaerat voluptatem, est, perspiciatis omnis!
+        "
+        link="https://google.com" 
+        img={image1} />
+          
+          
+        <ProjectCard title='First Project'
+        content="
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem dolore minus porro expedita. Maxime, repudiandae. Libero nisi eos tempore consequuntur quas ipsam obcaecati quae quaerat voluptatem, est, perspiciatis omnis!
+        "
+        link="https://google.com" 
+        img={image1} />
+      
+       </div>
+      
+      </div>
+      <div className="footer">
+        
+      <div className="footer-text">
+        <FontAwesomeIcon icon="fa-brands fa-github" className="fa-lg githublogo"/>{" "}
+        Jerry-the-coderr
+
+      </div>
       </div>
     </div>
   );
