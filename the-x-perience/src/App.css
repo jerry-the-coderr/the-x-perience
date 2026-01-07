@@ -27,6 +27,8 @@ body {
   font-size: 6rem;
   margin: 0px;
   font-family: monospace;
+
+  background-color: black;
 }
 label {
   display: inline-block;
